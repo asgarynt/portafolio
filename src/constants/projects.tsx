@@ -13,6 +13,8 @@ import reactIcon from "../img/skills/reactIcon.svg"
 import gitHubIcon from "../img/skills/gitHubIcon.svg"
 // import jiraIcon from "../img/Skills/jiraIcon.svg"
 import materialUIIcon from "../img/skills/materialUIIcon.svg"
+import deployIcon from "../img/skills/deployIcon.svg"
+
 
 interface DataItem {
     id: number;
@@ -24,19 +26,28 @@ interface DataItem {
     activities: null | string;
     status: null | string;
     repository: {
-        linkone: string;
-        githubone: string;
-        linktwo: string;
-        githubtwo: string;
+        link: {
+            one: string;
+            two: string;
+            three: string;
+            four: string;
+        },
+        icon: {
+            one: string;
+            two: string;
+            three: string;
+            four: string;
+        },
+
     },
-    tools:{
+    tools: {
 
         one: string;
         two: string;
-        three:string;
+        three: string;
         four: string;
     },
-    
+
     img: string;
 }
 
@@ -51,12 +62,20 @@ const data: DataItem[] = [
         activities: null,
         status: null,
         repository: {
-            linkone: gitHubIcon,
-            githubone: gitHubIcon,
-            linktwo: gitHubIcon,
-            githubtwo: gitHubIcon,
+            link: {
+                one: "https://rs-dveritas.netlify.app/",
+                two: "https://github.com/LouckGuntz/DVeritas",
+                three: "https://github.com/asgarynt/dveritasbackend",
+                four: "null"
+            },
+            icon: {
+                one: deployIcon,
+                two: gitHubIcon,
+                three: gitHubIcon,
+                four: "null",
+            },
         },
-        tools:{
+        tools: {
 
             one: javaIcon,
             two: springBootIcon,
@@ -76,12 +95,20 @@ const data: DataItem[] = [
         activities: null,
         status: null,
         repository: {
-            linkone: gitHubIcon,
-            githubone: gitHubIcon,
-            linktwo: gitHubIcon,
-            githubtwo: "null",
+            link: {
+                one: "https://github.com/asgarynt/calculadora",
+                two: "null",
+                three: "null",
+                four: "null"
+            },
+            icon: {
+                one: gitHubIcon,
+                two: "null",
+                three: "null",
+                four: "null",
+            }
         },
-        tools:{
+        tools: {
 
             one: javaIcon,
             two: "null",

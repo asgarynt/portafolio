@@ -8,26 +8,37 @@ import "./projects.css"
 
 interface cardsProjectsProps {
   id: number;
-  title: null | string;
-  category: null | string;
-  type: null | string;
-  description: null | string;
-  url: null | string;
-  activities: null | string;
-  status: null | string;
-  repository: {
-    githubone: string;
-    githubtwo: string;
-  },
-  tools: {
+    title: null | string;
+    category: null | string;
+    type: null | string;
+    description: null | string;
+    url: null | string;
+    activities: null | string;
+    status: null | string;
+    repository: {
+        link: {
+            one: string;
+            two: string;
+            three: string;
+            four: string;
+        },
+        icon: {
+            one: string;
+            two: string;
+            three: string;
+            four: string;
+        },
 
-    one: string;
-    two: string;
-    three: string;
-    four: string;
-  },
+    },
+    tools: {
 
-  img: string;
+        one: string;
+        two: string;
+        three: string;
+        four: string;
+    },
+
+    img: string;
 }
 
 
@@ -128,10 +139,14 @@ export default function CardsProjects(props: cardsProjectsProps) {
                   <AccordionDetails>
                     <Grid container>
                       <Grid item xs={12} display={"flex"} justifyContent={"space-evenly"}>
-                        {props.repository.githubone != "null" ? <img src={props.repository.githubone} width={35}>
-                        </img> : null}
-                        {props.repository.githubtwo != "null" ? <img src={props.repository.githubtwo} width={35}>
-                        </img> : null}
+                        {props.repository.icon.one != "null" ? <a target='_blank' href={props.repository.link.one}> <img src={props.repository.icon.one} width={35}>
+                        </img> </a>: null}
+                        {props.repository.icon.two != "null" ? <a target='_blank' href={props.repository.link.two}> <img src={props.repository.icon.two} width={35}>
+                        </img> </a>: null}
+                        {props.repository.icon.three != "null" ? <a target='_blank' href={props.repository.link.three}> <img src={props.repository.icon.three} width={35}>
+                        </img> </a>: null}
+                        {props.repository.icon.four != "null" ? <a target='_blank' href={props.repository.link.four}> <img src={props.repository.icon.four} width={35}>
+                        </img> </a>: null}
                       </Grid>
                     </Grid>
                   </AccordionDetails>
