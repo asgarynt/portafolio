@@ -74,7 +74,7 @@ export default function CardsProjects(props: cardsProjectsProps) {
               <Grid item xs={12}>
                 <Accordion sx={{ bgcolor: "#374D5D"}}>
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon sx={{color: "#F0EEED"}}/>}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
@@ -98,7 +98,7 @@ export default function CardsProjects(props: cardsProjectsProps) {
               <Grid item xs={12}>
                 <Accordion sx={{ bgcolor: "#374D5D"}}>
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon sx={{color: "#F0EEED"}}/>}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
@@ -128,7 +128,7 @@ export default function CardsProjects(props: cardsProjectsProps) {
               </Grid>
               <Grid item xs={12} >
                 <Accordion sx={{ bgcolor: "#374D5D" }}>
-                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
+                  <AccordionSummary expandIcon={<ExpandMoreIcon sx={{color: "#F0EEED"}}/>} aria-controls="panel1a-content" id="panel1a-header">
                     <Grid container>
                       <Grid item xs={12}>
 
